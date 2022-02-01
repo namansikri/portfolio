@@ -1,3 +1,4 @@
+const items = document.querySelectorAll("ul li");
 const filter_btns = document.querySelectorAll(".filter-btn");
 const skills_wrap = document.querySelector(".skills");
 const skills_bars = document.querySelectorAll(".skill-progress");
@@ -7,6 +8,13 @@ const footer_input = document.querySelector(".footer-input");
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
+
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.querySelector("li.active").classList.remove("active");
+    item.classList.add("active");
+  });
+});
 
 footer_input.addEventListener("focus", () => {
   footer_input.classList.add("focus");
