@@ -230,7 +230,6 @@ ul li {
   position: relative;
   text-align: center;
 }
-
 ul .active a::after {
   position: absolute;
   content: "";
@@ -243,7 +242,6 @@ ul .active a::after {
   border-top-right-radius: 2px;
   animation: appear 0.2s linear;
 }
-
 @keyframes appear {
   from {
     width: 0;
@@ -266,6 +264,7 @@ nav .container {
   height: 6rem;
   align-items: center;
 }
+
 .profile_logo {
   width: 180%;
   height: 180%;
