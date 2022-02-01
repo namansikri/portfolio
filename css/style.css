@@ -225,6 +225,34 @@ header {
   position: relative;
 }
 
+ul li {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+ul .active a::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 60%;
+  background-color: white;
+  left: 20%;
+  bottom: 0px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  animation: appear 0.2s linear;
+}
+
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -238,35 +266,6 @@ nav .container {
   height: 6rem;
   align-items: center;
 }
-
-ul li {
-  cursor: pointer;
-  position: relative;
-  text-align: center;
-}
-ul .active a::after {
-  position: absolute;
-  content: "";
-  height: 3px;
-  width: 60%;
-  background-color: white;
-  left: 20%;
-  bottom: 0px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  animation: appear 0.2s linear;
-}
-@keyframes appear {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-
-
 .profile_logo {
   width: 180%;
   height: 180%;
